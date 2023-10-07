@@ -41,14 +41,14 @@
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Valid tracking code is required: 356354..">
-						<input class="input100" id="trackingIdInput" type="text" name="text" placeholder="Input Tracking Code">
+						<input class="input100" id="trackingId" type="text" name="text" placeholder="Input Tracking Code">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 						</span>
 					</div>
 					
-					<div class="container-login100-form-btn" id="trackButton">
-						<button class="login100-form-btn">
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="button" onclick="authenticate()">
 							TRACK PACKAGE
 						</button>
 					</div>
@@ -75,26 +75,20 @@
 	<script src="vendor/select2/select2.min.js"></script>
 <!--===============================================================================================-->
 	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
+	<!-- <script >
 		$('.js-tilt').tilt({
 			scale: 1.1
 		})
-	</script>
+	</script> -->
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
-	<script src="firebase-db.js"></script>
-
 <!-- Include Firebase SDK -->
-<script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.2.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="firebase-db.js"></script>
 
-
-
-
-<script>
-
-</script>
 
 </body>
 </html>
